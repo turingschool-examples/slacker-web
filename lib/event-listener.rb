@@ -17,9 +17,7 @@ begin
   
     pubsub.on(:message) do |channel, message|
       data = JSON.parse(message)
-      puts data
       formatted_message = { author: data['user'],  body: data['msg']}
-      puts formatted_message
       client.publish('/messages', formatted_message.to_json)
     end
   end
