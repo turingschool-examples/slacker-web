@@ -1,0 +1,78 @@
+* { 
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  font-weight: 300;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+input {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  border: none;
+  border-bottom: 2px dashed #CCC;
+  display: block;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+button {
+  background-color: rgb(29, 178, 212);
+  border: none;
+  color: white;
+  display: block;
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+button:hover {
+  background-color: rgb(33, 203, 241);
+}
+
+.input-field {
+  margin-bottom: 1rem;
+}
+
+#messages {
+  background-color: rgb(255, 245, 213);
+  border: 1px solid rgb(232, 222, 193);
+  margin: 1rem 0;
+  padding: 0.8rem 0.4rem;
+}
+
+.message-author {
+  color: rgb(227, 117, 54);
+  font-weight: 400;
+}
+
+@media (min-width: 600px) {
+  label {
+    display: inline;
+  }
+  button {
+    display: block;
+    width: 100%;
+  }
+  input {
+    width: inherit;
+  }
+  .input-field {
+    margin-right: 2rem;
+    display: inline-block;
+  }
+  .input-field.submit {
+    width: 100%;
+  }
+}
