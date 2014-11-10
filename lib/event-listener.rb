@@ -3,7 +3,6 @@ require 'eventmachine'
 require 'em-hiredis'
 require 'json'
 
-
 begin
   puts "You're listening on Slacker and publishing to the web."
   puts "Press Ctrl-C at any time to exit.\n"
